@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'Inter';
+  src: url(./assets/Inter.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background-color: #292d33;
+}
+
+.nav {
+  background-color: #21222a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+.nav-logo {
+  color: #83d6f8;
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.nav-logo > h1 {
+  font-size: 2rem;
+}
+
+.nav > p {
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.nav-logo > img {
+  width: 50px;
+}
+
+.main-content {
+  color: white;
+  padding: 40px 30px;
+  height: 100%;
+  background-image: url(./assets/react-half.png);
+  background-repeat: no-repeat;
+  background-position: 100% 80%;
+  background-size: 200px;
+}
+
+.main-content > h1 {
+  font-size: 2.7rem;
+  margin-bottom: 40px;
+  letter-spacing: -0.05em;
+}
+
+.main-content > ul > li {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.main-content > ul > li::marker {
+  color: #82d4f8;
+  font-size: 1.6rem;
+}
+
+.footer {
+  background-color: #21222a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+} 
+
+@media only screen and (max-width: 610px) {
+  .nav {
+    padding: 10px 15px;
+  }
+  
+  .nav-logo {
+    margin-left: 0;
+  }
+
+  .nav-logo > img {
+    width: 35px;
+  }
+
+  .nav-logo > h1 {
+    font-size: 1.3rem;
+  }
+
+  .nav > p {
+    font-size: 0.85rem;
+  }
+
+  .main-content > h1 {
+    font-size: 1.8rem;
+  }
+
+  .main-content > ul > li {
+    font-size: 1.2rem;
+  }
+
+  .footer {
+    font-size: 1rem;
+  }
+}
